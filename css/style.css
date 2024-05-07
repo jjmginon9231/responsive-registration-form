@@ -15,6 +15,37 @@ button {
     font: inherit;
 }
 
+/* || VARIABLES */
+
+:root {
+    /* FONTS */
+    --FF-HEADINGS: "Lato", sans-serif;
+    --FF: "Open Sans", sans-serif;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+    --FW: 600;
+
+    /* COLORS */
+    --BGCOLOR-FADE: #C2B4FD;
+    --BGCOLOR: #6D51FB;
+    --BG-IMAGE: linear-gradient(to top, var(--BGCOLOR), var(--BGCOLOR-FADE));
+    --FORM-BGCOLOR: #F2F2F2;
+    --HIGHLIGHT-COLOR: #826AFB;
+    --ILS-FONT-COLOR: #5F5F5F;
+    --BUTTON-COLOR: #826AFB;
+    --BUTTON-HOVER: #6D51FB;
+    --BUTTON-ACTIVE: #5838FA;
+
+    /* BORDERS */
+    --BORDER-RADIUS: 10px;
+
+    /* STANDARD PADDING */
+    --PADDING: 1.5em;
+
+    /* STANDARD MARGIN */
+    --MARGIN-TOP: 1.25rem;
+    --MARGIN-BOTTOM: 0.6rem;
+}
+
 /* || UTILITY CLASSES */
 
 .offscreen {
@@ -25,60 +56,60 @@ button {
 /* || GENERAL STYLES */
 
 html {
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--FF);
 }
 
 body {
     align-items: center;
-    background: #826AFB linear-gradient(to top, #826AFB, hsl(250, 95%, 85%));
+    background: var(--BG-IMAGE);
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: var(--PADDING);
 }
 
 /* || FORM */
 
 .article {
-    background-color: #F2F2F2;
-    border-radius: 10px;
+    background-color: var(--FORM-BGCOLOR);
+    border-radius: var(--BORDER-RADIUS);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     max-width: 720px;
-    padding: 25px;
+    padding: var(--PADDING);
     position: relative;
     width: 100%;
 }
 
 .article__h1 {
     color: #333;
-    font-family: "Lato", sans-serif;
+    font-family: var(--FF-HEADINGS);
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: var(--FW);
     text-align: center;
 }
 
 .article__form {
-    margin-top: 30px;
+    margin-top: var(--MARGIN-TOP);
 }
 
 .form__p {
-    margin-top: 20px;
+    margin-top: var(--MARGIN-TOP);
     width: 100%;
 }
 
 .form__label {
     color: #333;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-family: var(--FF-HEADINGS);
+    font-weight: var(--FW);
 }
 
 .article__form :where(.form__input, .select-container) {
-    border-radius: 10px;
+    border-radius: var(--BORDER-RADIUS);
     border: 1px solid #CCC;
-    color: #5F5F5F;
-    font-size: 1rem;
+    color: var(--ILS-FONT-COLOR);
+    font-size: var(--FS);
     height: 50px;
-    margin-top: 8px;
+    margin-top: var(--MARGIN-TOP);
     outline: none;
     padding: 0 15px;
     position: relative;
@@ -96,14 +127,14 @@ body {
 
 .article__form .form__fieldset {
     border: none;
-    margin-top: 20px;
+    margin-top: var(--MARGIN-TOP);
 }
 
 .form__fieldset legend {
     color: #333;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    margin-bottom: 8px;
+    font-family: var(--FF-HEADINGS);
+    font-weight: var(--FW);
+    margin-bottom: var(--MARGIN-BOTTOM);
 }
 
 .article__form :where(.gender__container, .gender__p) {
@@ -118,7 +149,7 @@ body {
 }
 
 .gender__input {
-    accent-color: #826AFB;
+    accent-color: var(--HIGHLIGHT-COLOR);
 }
 
 .article__form :where(.gender__input, .gender__label) {
@@ -126,11 +157,11 @@ body {
 }
 
 .gender__label {
-    color: #5F5F5F;
+    color: var(--ILS-FONT-COLOR);
 }
 
 .address :where(input, .select-container) {
-    margin-top: 15px;
+    margin-top: var(--MARGIN-TOP);
 }
 
 .select-container {
@@ -140,34 +171,34 @@ body {
 .select-container select {
     background-color: #FFF;
     border: none;
-    color: #5F5F5F;
+    color: var(--ILS-FONT-COLOR);
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--FS);
     height: 100%;
     outline: none;
     width: 100%;
 }
 
 .form__button {
-    background: #826AFB;
+    background-color: var(--BUTTON-COLOR);
     border: none;
-    border-radius: 10px;
+    border-radius: var(--BORDER-RADIUS);
     color: #F2F2F2;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: var(--FS);
+    font-weight: 500;
     height: 55px;
-    margin-top: 30px;
+    margin-top: var(--MARGIN-TOP);
     transition: all 0.2s ease;
     width: 100%;
 }
 
 .form__button:hover {
-    background: hsl(250, 95%, 65%);
+    background-color: var(--BUTTON-HOVER);
 }
 
 .form__button:active {
-    background: hsl(250, 95%, 60%);
+    background-color: var(--BUTTON-ACTIVE);
 }
 
 /* || MEDIA QUERIES */
