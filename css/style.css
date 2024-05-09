@@ -28,9 +28,10 @@ button {
     --BGCOLOR-FADE: #C2B4FD;
     --BGCOLOR: #6D51FB;
     --BG-IMAGE: linear-gradient(to top, var(--BGCOLOR), var(--BGCOLOR-FADE));
+    --FONT-COLOR: #040404;
     --FORM-BGCOLOR: #F2F2F2;
     --HIGHLIGHT-COLOR: #826AFB;
-    --ILS-FONT-COLOR: #5F5F5F;
+    --INPUT-SELECT-FONT-COLOR: #5F5F5F;
     --BUTTON-COLOR: #826AFB;
     --BUTTON-HOVER: #6D51FB;
     --BUTTON-ACTIVE: #5838FA;
@@ -44,6 +45,19 @@ button {
     /* STANDARD MARGIN */
     --MARGIN-TOP: 1.25rem;
     --MARGIN-BOTTOM: 0.6rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR-FADE: #826AFB;
+        --BGCOLOR: #040404;
+        --FONT-COLOR: #F2F2F2;
+        --FORM-BGCOLOR: #303030;
+        --HIGHLIGHT-COLOR: #826AFB;
+        --BUTTON-COLOR: #826AFB;
+        --BUTTON-HOVER: #6D51FB;
+        --BUTTON-ACTIVE: #5838FA;
+    }
 }
 
 /* || UTILITY CLASSES */
@@ -62,6 +76,7 @@ html {
 body {
     align-items: center;
     background: var(--BG-IMAGE);
+    color: var(--FONT-COLOR);
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -81,7 +96,7 @@ body {
 }
 
 .article__h1 {
-    color: #333;
+    color: var(--FONT-COLOR);
     font-family: var(--FF-HEADINGS);
     font-size: 1.75rem;
     font-weight: var(--FW);
@@ -98,7 +113,7 @@ body {
 }
 
 .form__label {
-    color: #333;
+    color: var(--FONT-COLOR);
     font-family: var(--FF-HEADINGS);
     font-weight: var(--FW);
 }
@@ -106,7 +121,7 @@ body {
 .article__form :where(.form__input, .select-container) {
     border-radius: var(--BORDER-RADIUS);
     border: 1px solid #CCC;
-    color: var(--ILS-FONT-COLOR);
+    color: var(--INPUT-SELECT-FONT-COLOR);
     font-size: var(--FS);
     height: 50px;
     margin-top: var(--MARGIN-TOP);
@@ -131,7 +146,7 @@ body {
 }
 
 .form__fieldset legend {
-    color: #333;
+    color: var(--FONT-COLOR);
     font-family: var(--FF-HEADINGS);
     font-weight: var(--FW);
     margin-bottom: var(--MARGIN-BOTTOM);
@@ -157,7 +172,7 @@ body {
 }
 
 .gender__label {
-    color: var(--ILS-FONT-COLOR);
+    color: var(--FONT-COLOR);
 }
 
 .address :where(input, .select-container) {
@@ -171,7 +186,7 @@ body {
 .select-container select {
     background-color: #FFF;
     border: none;
-    color: var(--ILS-FONT-COLOR);
+    color: var(--INPUT-SELECT-FONT-COLOR);
     cursor: pointer;
     font-size: var(--FS);
     height: 100%;
