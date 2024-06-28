@@ -16,3 +16,8 @@ This project is a responsive registration form designed to ensure a seamless use
 ## Credits
 - Form design inspired by [CodingLab's Responsive Registration Form tutorial](https://www.youtube.com/watch?v=moIHTT2XK9g).
 - Best practices guided by [Dave Gray's web development tutorials](https://www.youtube.com/@DaveGrayTeachesCode).
+
+## Contact
+Feel free to reach out for collaborations or work opportunities.
+
+[LinkedIn](https://www.linkedin.com/in/john-jerry-ginon-0b5539314/) | [GitHub](https://github.com/jjmginon9231/) | [Upwork](https://www.upwork.com/freelancers/~01432eb5f90e315e15?mp_source=share)
