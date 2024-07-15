@@ -1,5 +1,7 @@
 # Responsive Registration Form
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b96d200-581b-49bc-9d6b-30f32fbeb76d/deploy-status)](https://app.netlify.com/sites/responsive-registration-form-2024/deploys)
+
 ## Overview
 This project is a responsive registration form designed to ensure a seamless user experience across various devices. The layout and structure were inspired by [CodingLab's tutorial on creating a responsive registration form](https://youtu.be/moIHTT2XK9g?si=ztIZta0VSkxhuEXU). However, the HTML and CSS practices implemented in this project are aligned with the best practices taught by Dave Gray, particularly from his tutorials on [HTML Forms and Inputs](https://youtu.be/frAGrGN00OA?si=Yah6tfmKK-tWK_Ow), [Semantic HTML Tags](https://youtu.be/kX3TfdUqpuU?si=raCXa60FDQda7Lfh), [How to Organize CSS](https://youtu.be/MNPdifWAAa4?si=KpREUQbe55b5x62j), and [CSS Custom Variables & Dark Mode](https://youtu.be/K_M7D0PfOFM?si=rFq4Hpgv0hDrUsU0).
 
